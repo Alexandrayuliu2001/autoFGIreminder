@@ -4,7 +4,7 @@ import requests
 import time
 
 # exceptional moniter
-def send_dingding_msg1(content, robot_id='钉钉机器人ID'): #please change to your own DingTalk ID
+def send_dingding_msg1(content, robot_id='钉钉机器人ID'): #please change to your own DingTalk Group Management Robot ID
     try:
         msg = {
             "msgtype": "text",
@@ -46,5 +46,5 @@ while True:
             print(send_msg1)
     except Exception as order_err:\
             print("Keep trying", order_err)
-    time.sleep(86400)
+    time.sleep(86400) # The website is updated on daily basis
 
